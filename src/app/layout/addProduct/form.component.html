@@ -1,0 +1,61 @@
+<div [@routerTransition]>
+    <app-page-header [heading]="'Add Items'" [icon]="'fa-edit'"></app-page-header>
+
+    <div class="row">
+        <div class="col-lg-6">
+
+            <form role="form">
+
+                <fieldset class="form-group">
+                    <label>Item Name</label>
+                    <input class="form-control" placeholder="Enter text">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Items Quantity</label>
+                    <input class="form-control" type='number' placeholder="Enter text">
+                </fieldset>
+                <fieldset>
+                    <label>Items Price</label>
+                    <div class="form-group input-group">
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">₹</span>
+                        </div>
+                        <input type="number" class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label>Tax</label>
+                    <div class="form-group input-group">
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">%</span>
+                        </div>
+                        <input type="number" class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label>Discount</label>
+                    <div class="form-group input-group">
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">%</span>
+                        </div>
+                        <input type="number" class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <button type="submit" class="btn btn-secondary">Submit Button</button>
+                <button type="reset" class="btn btn-secondary">Reset Button</button>
+
+            </form>

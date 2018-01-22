@@ -1,0 +1,18 @@
+<div class="col col-sm-6">
+    <div class="card mt-3">
+        <div class="card-header">Advanced Pagination</div>
+        <div class="card-body">
+            <div class="text-uppercase text-muted fs-12">maxSize = 5, rotate = false</div>
+            <ngb-pagination [collectionSize]="120" [(page)]="advancedPagination" [maxSize]="5" [boundaryLinks]="true"></ngb-pagination>
+
+            <div class="text-uppercase text-muted fs-12">maxSize = 5, rotate = true</div>
+            <ngb-pagination [collectionSize]="120" [(page)]="advancedPagination" [maxSize]="5" [rotate]="true" [boundaryLinks]="true"></ngb-pagination>
+
+            <div class="text-uppercase text-muted fs-12">maxSize = 5, rotate = true, ellipses = false</div>
+            <ngb-pagination [collectionSize]="120" [(page)]="advancedPagination" [maxSize]="5" [rotate]="true" [ellipses]="false" [boundaryLinks]="true"></ngb-pagination>
+            <div class="alert alert-info">
+                <b>Current page: </b>{{advancedPagination}}
+            </div>
+        </div>
+    </div>
+</div>
